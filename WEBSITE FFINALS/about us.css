@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cec0bc;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #241e22;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.portfolio-title {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    margin-right: auto; 
+    text-decoration: none;
+    cursor: default; 
+}
+
+.hamburger {
+    display: none;
+}
+
+.navBarButton ul {
+    display: flex;
+    transition: max-height 0.3s ease-out;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navBarButton ul li {
+    margin: 0 10px;
+}
+
+.navBarButton ul li a {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.navBarButton ul li a:hover, .navBarButton ul li a.active {
+    color: #322a30;
+    background: #cec0bc;
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+
+}
+
+.hero-section {
+    background: url(aboutus.jpg) no-repeat center center;
+    background-size: cover;
+    width: 50%;
+    height: 105vh;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section .container {
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-section2 {
+    position: absolute; 
+    top: 80px;
+    bottom: 0px; 
+    z-index: 1;
+    right: 0px;  
+    width: 770px; 
+    height: 105vh;
+    background-color: #322a30;
+}
+
+.hero-section2 .container1 {
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    margin-bottom: 20%;
+
+}
+.hero-section2 h2 {
+    font-size: 60px;
+    font-family: "Poppins";
+    background-color: #322a30;
+    color: white;
+    top: 100px;
+    margin: 60px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.hero-section2 h6 {
+    font-size: 17px;
+    font-family: "Montserrat";
+    background-color: #322a30;
+    padding: 0 60px 60px 60px; 
+    line-height: 1.5;
+    font-weight: 100;
+    color: white;
+    text-align: justify;
+}
+
+
+.barrier2 {
+    background: #241e22;
+    background-size: cover;
+    width: 100%;
+    height: 1vh;
+    position: relative;
+    z-index: 2;
+}
+
+.rowbarrier {
+    background: #cec0bc;
+    background-size: cover;
+    width: 100%;
+    height: 15vh;
+    position: relative;
+    z-index: 2;
+}
+
+.rowbarrier h2 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 50px;
+    padding: 19px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #322a30;
+}
+
+.barrier3 {
+    background: #241e22;
+    background-size: cover;
+    width: 100%;
+    height: 1vh;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section3 {
+    background: url(experiences.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative; 
+    top: 0px; 
+    right: 0; 
+    width: 768px; 
+    height: 105vh;
+    z-index: 1;
+}
+
+.hero-section3::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.logopic img {
+    width: 450px; 
+    height: 150px; 
+    top: 100px;
+    right: 15px;
+    position: relative;
+}
+
+.hero-section3 h5 {
+    font-size: 30px;
+    font-family: "Poppins";
+    font-weight: 100;
+    color: white;
+    margin-top: 115px; 
+    text-align: center;
+}
+
+.hero-section3 h6 {
+    font-size: 20px;
+    font-family: "Montserrat"; 
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    line-height: 1.5;
+    padding: 0 10px 10px 0;
+    margin-top: 10px; 
+}
+
+.hero-section3 p {
+    font-size: 17px;
+    font-family: "Montserrat";
+    padding: 0px 60px 60px 60px;
+    text-align: justify;
+    margin-top: 25px;
+    line-height: 1.5;
+    font-weight: 100;
+    color: white;
+}
+
+.hero-section3 .container2 {
+    height: 100%;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+
+.logopic2 img {
+    width: 400px; 
+    height: 95px; 
+    top: 100px;
+    position: relative;
+}
+
+.hero-section4 {
+    background: url(conventions.JPG) no-repeat center center;
+    background-size: cover;
+    position: absolute; 
+    top: 928px; 
+    right: 0; 
+    width: 757px; 
+    height: 760px;
+    z-index: 1;
+}
+
+.hero-section4::before {
+    background-color: rgba(0, 0, 0, 0.227);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section4 h5 {
+    font-size: 34px;
+    font-family: "Poppins";
+    font-weight: 100;
+    color: white;
+    margin-top: 157px; 
+    text-align: center;
+}
+
+.hero-section4 h6 {
+    font-size: 20px;
+    font-family: "Montserrat"; 
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    line-height: 1.4;
+    padding: 0 10px 10px 0;
+    margin-top: 20px; 
+    width: fit-content; 
+}
+
+.hero-section4 p {
+    font-size: 17px;
+    font-family: "Montserrat";
+    padding: 0px 60px 60px 60px;
+    text-align: justify;
+    line-height: 1.3;
+    font-weight: 100;
+    color: white;
+}
+
+.hero-section4 .container3 {
+    height: 100%;
+    z-index: 3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+
+
+#footer-div {
+    width: 100%;
+    background-color: #241e22;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 0; 
+    z-index: 5; 
+    position: relative;
+}
+
+.address {
+    display: flex; 
+    gap: 915px;
+    margin-left: 20px; 
+}
+
+.address h3{
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    left: 20px;
+    margin: 0 0 20 0; 
+}
+
+.address h4 {
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 0; 
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    #footer-div {
+        padding: 20px 0;
+    }
+
+    .address {
+        text-align: center; 
+        gap: 458px;
+    }
+
+    .address h3, .address h4 {
+        font-size: 18px;
+    }
+
+    .hero-section, .hero-section2{
+        width: 50%;
+        height: 700px;
+    }
+
+    .hero-section3{
+        width: 50%;
+        height: 900px;
+    }
+
+    .hero-section4{
+        width: 50%;
+        height: 910px;
+        top: 870px;
+    }
+
+    .container, .container1, .container2{
+        width: 100%;
+    }
+
+    .hero-section2 h2 {
+        font-size: 50px; 
+        padding: 10px; 
+        text-align: center;
+        margin-top: 60px;
+    }
+    
+    .hero-section2 h6 {
+        font-size: 13px; 
+        text-align: justify;
+        margin-top: -30px;
+    }
+
+    .barrier2 {
+        height: 1vh;
+
+    }
+    
+    .rowbarrier {
+        height: 5vh;
+    }
+    
+    .rowbarrier h2 {
+        font-size: 40px;
+        padding: 10px;
+
+    }
+    
+    .barrier3 {
+        width: 100%;
+        height: 1vh;
+    }
+    
+    .logopic img {
+        width: 80%; 
+        height: 130px; 
+        top: 100px;
+        right: 6px;
+    }
+    
+    .hero-section3 h5 {
+        font-size: 30px;
+        margin-top: 115px; 
+    }
+    
+    
+    .hero-section3 h6 {
+        font-size: 20px;
+        line-height: 1.5;
+        padding: 0 0px 0px 0;
+        margin-top: 20px; 
+    }
+    
+    .hero-section3 p {
+        font-size: 17px;
+        margin-top: 30px;
+    }
+
+    
+    .logopic2 img {
+        width: 290px; 
+        height: 70px; 
+        top: 110px;
+        left: 7px;
+    }
+    
+    .hero-section4 h5 {
+        font-size: 30px;  
+        margin-top: 179px;  
+    }
+
+    .hero-section4 h6 {
+        font-size: 20px; 
+        line-height: 1.5;
+        padding: 0 10px 10px 0;
+        margin-top: 25px;
+    }
+
+    .hero-section4 p {
+        font-size: 17px; 
+        padding: 0px 30px 30px 30px;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display:inline-block;
+        cursor: pointer;
+        position: absolute;
+        left: 63%;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #ffffff;
+        margin: 6px 0;
+        
+    }
+
+    .portfolio-title {
+        font-size: 16px; 
+    }
+
+    header {
+        padding: 0 20px;
+    }
+
+    .navBarButton ul {
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .navBarButton ul li {
+        margin: 0;
+    }
+
+    .navBarButton ul li a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .navBarButton ul.expanded {
+        max-height: 100px;
+    }
+
+    .navBarButton ul li a {
+        font-size: 12px;
+        padding: 5px 7px;
+    }
+
+    .portfolio-title {
+        font-size: 13px;
+    }
+
+    #footer-div {
+        padding: 15px 15px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .address {
+        display: flex;
+        flex-direction: column; 
+        gap: 5px;
+        text-align: justify;
+    }
+
+    .hero-section2 h2 {
+        font-size: 15px; 
+        padding-top: 4px; 
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .hero-section2 h6 {
+        font-size: 7px; 
+        text-align: justify;
+        margin-top: -70px;
+        padding: 20px;
+    }
+    
+    .address h3, .address h4 {
+        font-size: 10px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .hero-section, .hero-section2{
+        width: 50%;
+        height: 350px;
+    }
+
+    .hero-section3{
+        width: 100%;
+        height: 900px;
+    }
+
+    .hero-section4{
+        width: 100%;
+        height: 900px;
+        top: 0%;
+        position: relative;
+    }
+
+    .container, .container1, .container2{
+        width: 100%;
+    }
+
+    .container3{
+        width: 100%;
+        height: 1000px;
+    }
+
+    .barrier2 {
+        height: 1vh;
+
+    }
+    
+    .rowbarrier {
+        height: 4vh;
+    }
+    
+    .rowbarrier h2 {
+        font-size: 20px;
+        padding: 5px;
+
+    }
+    
+    .barrier3 {
+        width: 100%;
+        height: 1vh;
+    }
+    
+    .logopic img {
+        width: 90%; 
+        height: 120px; 
+        top: 100px;
+        left: 2px;
+    }
+    
+    .hero-section3 h5 {
+        font-size: 24px;
+        margin-top: 120px; 
+    }
+    
+    
+    .hero-section3 h6 {
+        font-size: 25px;
+        line-height: 1.5;
+        padding: 0 0px 0px 0;
+        margin-top: 60px; 
+    }
+    
+    .hero-section3 p {
+        font-size: 17px;
+        margin-top: 60px;
+        line-height: 1.3;
+    }
+
+    
+    .logopic2 img {
+        width: 290px; 
+        height: 70px; 
+        top: 110px;
+        left: 7px;
+    }
+    
+    .hero-section4 h5 {
+        font-size: 30px;  
+        margin-top: 135px;  
+    }
+
+    .hero-section4 h6 {
+        font-size: 21px; 
+        line-height: 1.5;
+        padding: 15px;
+        margin-top: 35px;
+        text-align: center;
+    }
+
+    .hero-section4 p {
+        margin-top: 33px;
+        font-size: 15px; 
+        padding: 0px 30px 30px 30px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .address h3, .address h4 {
+        font-size: 16px; 
+    }
+}

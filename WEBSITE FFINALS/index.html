@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Raine's Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="portfolio-title">
+            <li><a href="index.html" class="portfolio-title"> Raine Zaldivar's Portfolio </a></li>
+            </a>
+        </div>
+        
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+        <nav class="navBarButton">
+            <ul>
+                <li><a href="index.html" class="active">Photography</a></li>
+                <li><a href="about us.html">About Me</a></li>
+ 
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <div class="container">
+        </div>
+    </div>
+
+    <div id="main-div" class="clearfix">
+        <div class="pic">
+            <a href="artwakening.html">
+                <img src="kuhaku7.jpg" alt="Image 1">
+                <div class="text">ARTwakening Festival 2024 (3rd Term)</div>
+            </a>
+        </div>
+    
+        <div class="pic">
+            <a href="NSTP2.html">
+            <img src="kuhaku8.jpg" alt="Image 2">
+            <div class="text">National Service Training Program 2: Community Immersion</div>
+        </a>
+        </div>
+
+        <div class="pic">
+            <a href="feumain.html">
+            <img src="kuhaku9.jpg" alt="Image 3">
+            <div class="text">FEU Main Events</div>
+        </a>
+        </div>
+
+        <div class="pic">
+            <a href="cons.html">
+            <img src="kuhaku10.jpg" alt="Image 4">
+            <div class="text">Conventions</div>
+        </a>
+        </div>
+
+        <div class="pic">
+            <a href="portrait.html">
+            <img src="kuhaku11.jpg" alt="Image 4">
+            <div class="text">Portraits</div>
+        </a>
+        </div>
+
+
+    </div>
+
+    <div id="footer-div">
+        <div class="address">
+            <h3> Raine Angeline B. Zaldivar </h3>  
+            <h4> zaldivarraine17@gmail.com </h4>
+        </div>
+    </div>
+
+    </div>
+
+    <script>
+        $(document).ready(function() {
+        $('a').click(function(e) {
+            e.preventDefault(); 
+            var href = $(this).attr('href'); 
+
+            $('body').fadeOut(300, function() {
+                window.location.href = href;
+            });
+        });
+    });
+
+    function toggleMenu() {
+    const nav = document.querySelector('.navBarButton ul');
+    nav.classList.toggle('expanded');
+}
+</script>
+
+</body>
+
+</html>

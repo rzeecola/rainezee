@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #241e22bb;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 80px;
+    background: #241e22;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    z-index: 10; 
+}
+
+.portfolio-title {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    margin-right: auto; 
+    cursor: default; 
+}
+
+.navBarButton ul {
+    display: flex;
+    transition: max-height 0.3s ease-out;
+}
+
+.navBarButton ul li {
+    margin: 0 10px;
+}
+
+.navBarButton ul li a {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.navBarButton ul li a:hover, 
+.navBarButton ul li a.active {
+    color: #322a30;
+    background: #cec0bc;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    left: 63%;
+}
+
+.hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #ffffff;
+    margin: 6px 0;
+}
+
+#main-div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #241e22bb;
+    justify-content: center;
+    padding: 30px;
+    z-index: 10;
+}
+
+#main-div .pic {
+    position: relative;
+    flex: 0 0 calc(33.33% - 40px); 
+    margin: 30px;
+    text-align: center;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#main-div .pic img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    z-index: 10;
+}
+
+#main-div .pic:hover img {
+    filter: brightness(50%);
+    z-index: 10;
+}
+
+#main-div .pic .text {
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 0;
+    z-index: 10;
+}
+
+/* Footer */
+#footer-div {
+    width: 100%;
+    background-color: #241e22;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 0; 
+    z-index: 5; 
+    position: relative;
+}
+
+.address {
+    display: flex; 
+    gap: 915px;
+    margin-left: 20px; 
+}
+
+.address h3, .address h4 {
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 0; 
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .address {
+        text-align: justify; 
+        gap: 546px;
+    }
+
+    .address h3, .address h4 {
+        font-size: 15px;
+    }
+
+    #main-div .pic {
+        flex: 0 0 calc(50% - 60px); 
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: inline-block;
+        left:55%;
+    }
+
+    .portfolio-title {
+        font-size: 13px;
+    }
+
+    header {
+        padding: 0 20px;
+    }
+
+    .navBarButton ul {
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .navBarButton ul.expanded {
+        max-height: 100px;
+    }
+
+    .navBarButton ul li a {
+        font-size: 12px;
+        padding: 5px 7px;
+    }
+
+    .address {
+        gap: 10px;
+    }
+
+    .address h3, .address h4 {
+        font-size: 6px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-section h3 {
+        font-size: 10px; 
+    }
+
+    #main-div .pic {
+        flex: 0 0 calc(50% - 30px); 
+        margin: 15px;
+    }
+
+    #main-div .pic .text {
+        font-size: 13px;
+        margin: 0;
+    }
+
+    .address {
+        flex-direction: column; 
+        gap: 5px;
+        text-align: justify;
+    }
+    
+    .address h3, .address h4 {
+        font-size: 6px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero-section h3 {
+        font-size: 1.2em; 
+    }
+
+    #main-div .pic {
+        flex: 0 0 calc(100% - 30px); 
+        margin: 10px;
+    }
+
+    .address h3, .address h4 {
+        font-size: 16px; 
+    }
+}
